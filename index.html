@@ -1,0 +1,36 @@
+    <html>
+    <head>
+        <script src="funciones.js"></script>
+        <link rel="stylesheet" href="estilos.css">
+        <title>Desafio 1</title>
+    </head>
+    <body>
+        <div class="cuerpo">
+            <img class="logo" src="/images/Frame 6.png" /><br>
+            <div>
+                <textarea class="datos" id="txtTexto" placeholder="ingrese el texto aquí..." cols="30" rows="5"></textarea><br>
+                <div class="info">
+                    <label class="solo"><img src="images/bi_exclamation-circle-fill.png">Sólo letras minusculas y sin tildes</label>
+                </div>
+                <div class="frame3">
+                <input class="encriptar" type="button" value="ENCRIPTAR" onclick="encriptarFrase(document.getElementById('txtTexto').value);">
+                <input class="desencriptar" type="button" value="DESENCRIPTAR" onclick="desencriptarFrase(document.getElementById('txtTexto').value);">
+                </div>
+            </div>
+            <div class="rectangle1">
+                <div id="divMuneco">
+                    <img class="logo2" src="/images/Muneco.png" />
+                    <label class="info2"><h5>Ningún mensaje fue encontrado</h5></label><br>
+                    <label class="info3">Ingrese el texto que desee encriptar o desencriptar</label>
+                </div>
+                <div id="divResultado" style="display: none;">
+                    <textarea class="datos2" id="txtResultado" placeholder="resultado de la operación..." cols="30" rows="5">
+                    </textarea><br>
+                    <div class="frame4">
+                        <input class="desencriptar" type="button" value="COPIAR" onclick="escribirAlPortapapeles(document.getElementById('txtResultado').value);">
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>
